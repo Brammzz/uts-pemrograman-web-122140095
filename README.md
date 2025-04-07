@@ -52,7 +52,6 @@ Aplikasi web untuk menampilkan, mencari, dan menyimpan puisi-puisi terkenal. Dib
    ```bash
    npm run dev
    ```
-4. Buka browser di http://localhost:3000
 
 ## API yang Digunakan
 
