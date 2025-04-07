@@ -67,4 +67,4 @@ Aplikasi ini menggunakan [PoetryDB API](https://poetrydb.org) untuk mengambil da
 
 ## Pengembang
 
-- [Nama Mahasiswa] - [NIM]
+Abraham Ganda Napitu_122140095
