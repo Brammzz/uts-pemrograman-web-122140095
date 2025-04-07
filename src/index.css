@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  background: linear-gradient(-45deg, #fef074, #ff4f5a, #b8ec68, #6de0f6);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  background-attachment: fixed;
+  @apply text-black-spotify;
+}
+
+
+/* Spotify-style heading */
+.spotify-heading {
+  @apply text-5xl font-bold leading-tight mb-4;
+}
+
+/* Spotify-style subheading */
+.spotify-subheading {
+  @apply text-xl font-medium text-black-spotify mb-6;
+}
+
+/* Pop-art colors for backgrounds */
+.bg-pop-red {
+  background-color: #ff4f5a;
+}
+.bg-pop-green {
+  background-color: #b8ec68;
+}
+.bg-pop-blue {
+  background-color: #6de0f6;
+}
+.bg-pop-yellow {
+  background-color: #fef074;
+}
+
+/* Card hover effects */
+.card-hover-effect {
+  transition: transform 0.3s ease-in-out;
+}
+.card-hover-effect:hover {
+  transform: translateY(-5px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-indigo-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-indigo-400;
+}
+
+/* Transitions for poem text */
+.poem-line {
+  transition: color 0.5s ease, font-weight 0.5s ease;
+}
+
+/* Animate page transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+/* Poetry specific styling */
+.poetry-text {
+  line-height: 1.8;
+  font-weight: 400;
+}
